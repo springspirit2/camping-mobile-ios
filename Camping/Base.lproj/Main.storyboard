@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447" y="622"/>
+            <point key="canvasLocation" x="-137" y="278"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="WhT-73-YWo">
@@ -221,7 +221,104 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLF-tN-lgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447" y="1386"/>
+            <point key="canvasLocation" x="555" y="278"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="rkd-jf-S7F">
+            <objects>
+                <viewController id="WRE-A5-wRu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jgc-LJ-Dwe"/>
+                        <viewControllerLayoutGuide type="bottom" id="eqK-re-Smz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="25Y-s9-ad9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="검색" id="q6h-6T-uOU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWj-qs-wSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="1820"/>
+        </scene>
+        <!--지도-->
+        <scene sceneID="TNc-YA-b6g">
+            <objects>
+                <viewController id="2AE-4c-5TV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKw-Eb-MrB"/>
+                        <viewControllerLayoutGuide type="bottom" id="JAH-wT-ymX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dGQ-Hl-MF2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="지도" id="hHx-J9-gCc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZZ-8i-Kh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="1820"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="4XQ-0R-A2r">
+            <objects>
+                <viewController id="woZ-6m-Uxb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vma-3k-Sqk"/>
+                        <viewControllerLayoutGuide type="bottom" id="0b2-7p-UA6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFb-pt-gn5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="설정" id="yIw-Ct-Q5A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRP-e8-y5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="1820"/>
+        </scene>
+        <!--지역-->
+        <scene sceneID="b7X-YD-8FY">
+            <objects>
+                <viewController id="G4v-l6-VDa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tlA-bO-2vI"/>
+                        <viewControllerLayoutGuide type="bottom" id="zAy-Ff-vux"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ft8-ld-5Oh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="지역" id="HGf-uz-6dD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5x7-ul-xv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="1044"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KsT-IO-kNA">
+            <objects>
+                <tabBarController id="bCe-UW-Knj" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QNh-Tn-cE8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G4v-l6-VDa" kind="relationship" relationship="viewControllers" id="4Ur-E0-fdZ"/>
+                        <segue destination="WRE-A5-wRu" kind="relationship" relationship="viewControllers" id="5rg-bk-SXv"/>
+                        <segue destination="2AE-4c-5TV" kind="relationship" relationship="viewControllers" id="skl-Lt-iTK"/>
+                        <segue destination="woZ-6m-Uxb" kind="relationship" relationship="viewControllers" id="ClH-zI-F40"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfQ-Fc-PNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="1044"/>
         </scene>
     </scenes>
 </document>

@@ -68,7 +68,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="VZJ-TP-dbg" kind="presentation" id="9aR-zs-QOg"/>
+                                    <segue destination="VZJ-TP-dbg" kind="presentation" identifier="goToSignupViewSegue" id="9aR-zs-QOg"/>
                                 </connections>
                             </button>
                         </subviews>

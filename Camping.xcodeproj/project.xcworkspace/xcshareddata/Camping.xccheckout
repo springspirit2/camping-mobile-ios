@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>97FBDBFA-044D-4DC7-801D-67CB31466478</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Camping</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C0E9117FBA7BAB2476C7CBBCE7E69E3D5F2E4C86</key>
+		<string>https://github.com/springspirit2/camping-mobile-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Camping.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C0E9117FBA7BAB2476C7CBBCE7E69E3D5F2E4C86</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/springspirit2/camping-mobile-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C0E9117FBA7BAB2476C7CBBCE7E69E3D5F2E4C86</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C0E9117FBA7BAB2476C7CBBCE7E69E3D5F2E4C86</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Camping</string>
+		</dict>
+	</array>
+</dict>
+</plist>

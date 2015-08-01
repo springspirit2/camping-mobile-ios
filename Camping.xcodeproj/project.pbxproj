@@ -14,6 +14,7 @@
 		A51229461B6BD31E007DDA34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A51229441B6BD31E007DDA34 /* LaunchScreen.xib */; };
 		A51229521B6BD31E007DDA34 /* CampingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51229511B6BD31E007DDA34 /* CampingTests.swift */; };
 		A512295C1B6BDFEE007DDA34 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512295B1B6BDFEE007DDA34 /* SignupViewController.swift */; };
+		A554D8741B6CC59A00BE4179 /* RegionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A554D8731B6CC59A00BE4179 /* RegionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A51229501B6BD31E007DDA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51229511B6BD31E007DDA34 /* CampingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingTests.swift; sourceTree = "<group>"; };
 		A512295B1B6BDFEE007DDA34 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A554D8731B6CC59A00BE4179 /* RegionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A51229381B6BD31E007DDA34 /* Camping */ = {
 			isa = PBXGroup;
 			children = (
+				A554D8731B6CC59A00BE4179 /* RegionTableViewController.swift */,
 				A512295B1B6BDFEE007DDA34 /* SignupViewController.swift */,
 				A512293D1B6BD31E007DDA34 /* LoginViewController.swift */,
 				A512293F1B6BD31E007DDA34 /* Main.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A512295C1B6BDFEE007DDA34 /* SignupViewController.swift in Sources */,
+				A554D8741B6CC59A00BE4179 /* RegionTableViewController.swift in Sources */,
 				A512293E1B6BD31E007DDA34 /* LoginViewController.swift in Sources */,
 				A512293C1B6BD31E007DDA34 /* AppDelegate.swift in Sources */,
 			);
@@ -413,6 +417,7 @@
 				A51229571B6BD31E007DDA34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A51229581B6BD31E007DDA34 /* Build configuration list for PBXNativeTarget "CampingTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				A512295A1B6BD31E007DDA34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

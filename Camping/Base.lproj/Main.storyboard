@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="382" y="1887"/>
         </scene>
-        <!--검색-->
+        <!--캠핑장 검색-->
         <scene sceneID="IPc-mw-bRf">
             <objects>
-                <viewController id="A0p-2Z-ToE" sceneMemberID="viewController">
+                <viewController id="A0p-2Z-ToE" customClass="SearchViewController" customModule="Camping" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2EN-yU-feb"/>
                         <viewControllerLayoutGuide type="bottom" id="8fy-LI-WJp"/>
@@ -152,13 +152,52 @@
                     <view key="view" contentMode="scaleToFill" id="bGA-6T-hsp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aAo-wp-vj3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="RGw-ym-sna">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="A0p-2Z-ToE" id="2DA-Bf-0St"/>
+                                    </connections>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="ARb-Rd-aXg">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARb-Rd-aXg" id="7Gu-58-myo">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="A0p-2Z-ToE" id="gCE-7j-SRb"/>
+                                    <outlet property="delegate" destination="A0p-2Z-ToE" id="QFb-4c-RV8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="검색" id="HKn-Uh-Jpk"/>
+                    <navigationItem key="navigationItem" title="캠핑장 검색" id="Qeo-1I-Fur"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="cf2-jY-Ley" id="JbJ-oQ-koO"/>
+                        <outlet property="tableView" destination="aAo-wp-vj3" id="qD9-2x-qBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9H-uh-OUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="cf2-jY-Ley">
+                    <connections>
+                        <outlet property="delegate" destination="A0p-2Z-ToE" id="7qA-dY-d5F"/>
+                        <outlet property="searchBar" destination="RGw-ym-sna" id="zBU-Gt-glc"/>
+                        <outlet property="searchContentsController" destination="A0p-2Z-ToE" id="zFg-wP-LY5"/>
+                        <outlet property="searchResultsDataSource" destination="A0p-2Z-ToE" id="szp-A2-sXZ"/>
+                        <outlet property="searchResultsDelegate" destination="A0p-2Z-ToE" id="qNV-Sy-TzF"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1199" y="1887"/>
+            <point key="canvasLocation" x="2011" y="1887"/>
         </scene>
         <!--지역별-->
         <scene sceneID="dMN-vT-2yN">
@@ -204,7 +243,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="COT-Xn-hJ2" kind="relationship" relationship="viewControllers" id="Z89-YL-rv5"/>
-                        <segue destination="A0p-2Z-ToE" kind="relationship" relationship="viewControllers" id="ymd-X3-3Rq"/>
+                        <segue destination="gez-vQ-N6y" kind="relationship" relationship="viewControllers" id="ymd-X3-3Rq"/>
                         <segue destination="miH-wv-MCe" kind="relationship" relationship="viewControllers" id="Zsg-Ns-93A"/>
                         <segue destination="kkQ-g4-URs" kind="relationship" relationship="viewControllers" id="XPs-So-vOU"/>
                     </connections>
@@ -366,6 +405,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWx-n3-vVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="387" y="877"/>
+        </scene>
+        <!--검색-->
+        <scene sceneID="FmL-dc-pBm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gez-vQ-N6y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="검색" id="HKn-Uh-Jpk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WoD-Dr-qGg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A0p-2Z-ToE" kind="relationship" relationship="rootViewController" id="zWf-0v-E2p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQT-in-Tl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="1887"/>
         </scene>
     </scenes>
 </document>

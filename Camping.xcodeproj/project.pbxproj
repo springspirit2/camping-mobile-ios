@@ -15,6 +15,7 @@
 		A51229521B6BD31E007DDA34 /* CampingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51229511B6BD31E007DDA34 /* CampingTests.swift */; };
 		A512295C1B6BDFEE007DDA34 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512295B1B6BDFEE007DDA34 /* SignupViewController.swift */; };
 		A554D8741B6CC59A00BE4179 /* RegionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A554D8731B6CC59A00BE4179 /* RegionTableViewController.swift */; };
+		A5E364541B6E489000D48E5A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E364531B6E489000D48E5A /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A51229511B6BD31E007DDA34 /* CampingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingTests.swift; sourceTree = "<group>"; };
 		A512295B1B6BDFEE007DDA34 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A554D8731B6CC59A00BE4179 /* RegionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTableViewController.swift; sourceTree = "<group>"; };
+		A5E364531B6E489000D48E5A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		A51229381B6BD31E007DDA34 /* Camping */ = {
 			isa = PBXGroup;
 			children = (
+				A5E364531B6E489000D48E5A /* SearchViewController.swift */,
 				A554D8731B6CC59A00BE4179 /* RegionTableViewController.swift */,
 				A512295B1B6BDFEE007DDA34 /* SignupViewController.swift */,
 				A512293D1B6BD31E007DDA34 /* LoginViewController.swift */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E364541B6E489000D48E5A /* SearchViewController.swift in Sources */,
 				A512295C1B6BDFEE007DDA34 /* SignupViewController.swift in Sources */,
 				A554D8741B6CC59A00BE4179 /* RegionTableViewController.swift in Sources */,
 				A512293E1B6BD31E007DDA34 /* LoginViewController.swift in Sources */,
